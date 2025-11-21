@@ -1,0 +1,123 @@
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE & Editor Files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.vim/
+*.swp
+*.vim
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+.coverage
+
+# Node.js / JavaScript
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+.env
+.env.local
+
+# Virtual Environments
+venv/
+env/
+ENV/
+.venv
+
+# Secrets & Credentials (NEVER COMMIT THESE)
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+*.p12
+*.pfx
+secrets.json
+credentials.json
+.credentials
+api_keys.txt
+passwords.txt
+
+# Private Research (Repository B Should Never Be Here)
+research/
+*.research
+proprietary_math/
+s3_internals/
+sealed_logic/
+
+# Database Files
+*.db
+*.sqlite
+*.sqlite3
+
+# Compiled Files
+*.o
+*.a
+*.so
+*.dylib
+*.dll
+*.exe
+
+# Temporary Files
+*.tmp
+*.temp
+*.log
+.temp/
+tmp/
+
+# OS-Specific
+.DS_Store
+.AppleDouble
+.LSOverride
+.TemporaryItems
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.AppleDouble
+.LSOverride
+.DocumentRevisions-V100
+.fseventsd
+.TemporaryItems
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
