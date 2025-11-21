@@ -1,153 +1,236 @@
 # Sentinel_Hub
 
-**Sentinel Labs Three-Repository Architecture**  
-Public-Facing Infrastructure & Digital Control Hub
+**Sentinel Labs Founder Narrative**  
+*LLM–Portable • Narrative–Safe • No S³ Internals*
 
 ---
 
-## What Is This Repository?
+## 🎯 What is Sentinel Labs?
 
-Sentinel_Hub is the **public-facing, LLM-safe collaborative space** for Sentinel Labs. It contains:
+Sentinel Labs is a Founder-driven decision system that transforms market disagreement into a repeatable business workflow. Sentinel does not predict, forecast, or speculate. It identifies misaligned intention and converts this detection into an internal business instrument known as a **Sentinel Check**.
 
-- HUD code (websocket clients, brokers, visualization)
-- Enclave shell (state enums, signature checks, USB detection, engine loader)
-- Documentation (legal, operational, research summaries)
-- Business files (compliance, hiring, operational processes)
-- Tools, utilities, and tests (mock engines for testing)
-- Research notes that do **not** reveal proprietary internals
-- Website/dashboard code (maxlaboratories.com)
-
-## What This Repository Is NOT
-
-This repository does **not** contain:
-
-- Proprietary S3 mathematical research
-- Signal kernels, transforms, or experimental logic
-- Actual enclave engine code (Python or compiled)
-- Draft implementations of sealed S3 engines
-- Any files from Sentinel_Enclave1 or Sentinel_Enclave2 (the sealed repositories)
-- API keys, credentials, or plaintext secrets
-- Personal identity records or financial data
+The system operates entirely through narrative constructs that avoid disclosure of proprietary logic while still conveying the structure of the workflow.
 
 ---
 
-## Three-Repository Model
+## 📚 Core Architecture: Table A, Hallway, Table B
 
-Sentinel Labs operates using **strict separation of concerns**:
+Sentinel's operational flow is defined by three physical metaphors:
 
-### Repository A: Sentinel_Hub (This Repo - GitHub)
-- **Location**: GitHub (private)
-- **Access**: Founder, collaborators, LLMs (under controlled conditions)
-- **Purpose**: Define public interfaces, HUD, control hub, documentation
-- **What it does**: Loads enclave engines via black-box interface, displays verdicts, executes trades
+### **Table A: The Room of Disagreement**
+Table A represents the moment when two market participants disagree. One side is aligned with the underlying causal environment; the other side is misaligned. Sentinel identifies the misaligned participant and issues a Sentinel Check.
 
-### Repository B: Sentinel_Enclave1 (USB Only - Offline)
-- **Location**: Offline (USB, encrypted storage, air-gapped)
-- **Access**: Founder only
-- **Purpose**: Full proprietary S3 trading engine (Python scripts)
-- **What it contains**: Complete signal kernels, transforms, proprietary mathematics, full research notes
-- **What it returns**: Trading verdicts ("BUY", "SELL", "NO TRADE") via enclave shell interface
+### **The Hallway: Neutral Passage of Time**
+Once a Check is issued, the Founder enters the Hallway, a period requiring no decisions or analysis. The Check matures as the underlying environment resolves toward clarity.
 
-### Repository C: Sentinel_Enclave2 (USB Only - Offline)
-- **Location**: Offline (USB, encrypted storage, air-gapped)
-- **Access**: Founder only
-- **Purpose**: Simplified lite S3 engine for MVP/testing/backup (Python scripts)
-- **What it contains**: Simplified signal processing, basic transforms, reduced research logic
-- **What it returns**: Same verdicts ("BUY", "SELL", "NO TRADE") via identical interface to Enclave1
-
-### The Firewall Principle
-**LLMs and collaborators may refine the world around the Judge, but may never see the Judge itself.**
-
-This means:
-- Repository A calls the enclave shell
-- The enclave shell loads either Enclave1 (full) or Enclave2 (lite) from USB
-- Enclaves run offline as Python scripts or compiled binaries
-- Repository A receives only verdicts (BUY/SELL/NO TRADE)
-- At no point does Repository A contain proprietary S3 mathematics
-- Both enclaves remain sealed, founder-only, never on GitHub
+### **Table B: The Settlement Desk**
+Table B is where the Check is redeemed. The Founder determines when to settle, how long to remain in the Hallway, and how much of the Check to redeem.
 
 ---
 
-## What Happens Here
+## ⚡ Shadow Momentum™
 
-### Allowed Activities
-- Document HUD behavior and interfaces
-- Develop enclave shell logic (state enums, signature checks)
-- Create mock/test implementations (e.g., mock verdicts for testing)
-- Write business and operational documentation
-- Organize and improve folder structure
-- Create tests and utilities
+**Shadow Momentum™** is a proprietary Sentinel Labs concept describing the pre-expressed causal pressure field that forms before price becomes visible. It provides the narrative explanation for why Sentinel can reliably identify the weaker participant at Table A: a causal drift begins forming prior to full price expression.
 
-### Forbidden Activities
-- **Do not attempt to reverse-engineer or approximate S3 internals**
-- Do not write formulas, kernels, or thresholds related to the sealed engine
-- Do not modify or interpret proprietary founder mathematics
-- Do not commit API keys, credentials, or secrets
-- Do not commit personal identity or financial records
+Shadow Momentum™ is consistent with the coherence-driven architecture described in Sentinel's patent filings.
 
 ---
 
-## How to Use This Repository
+## 🔄 Pressure Flip Doctrine
 
-1. **Read the architecture documentation** in `/docs/architecture.md`
-2. **Understand the enclave interface** in `/docs/enclave-interface.md`
-3. **Check the folder structure** to know where to add new code
-4. **Write code for HUD, enclave shell, or utilities**
-5. **Test against mock verdicts** (see `/tests/`)
-6. **Never attempt to predict or approximate the sealed engine logic**
+Sentinel interprets directional pressure through three founder-level states:
+
+```
+SELL → NO TRADE → BUY
+```
+
+- **SELL**: Down-pressure is coherent.
+- **NO TRADE**: Drift collapses into noise; no participant is cleanly correct.
+- **BUY**: Up-pressure becomes coherent.
+
+These transitions describe how causal pressure realigns prior to price reveal. This doctrine is fully narrative-safe.
 
 ---
 
-## Repository Structure
+## 📍 Repository Structure
+
+This repository contains the **public-safe narrative layer** of the full Sentinel Labs ecosystem:
 
 ```
 Sentinel_Hub/
-├── README.md                    # You are here
-├── .gitignore                   # Files Git should never track
-├── LICENSE                      # Intellectual property protection
+├── README.md                      # You are here (Founder Narrative)
+├── LICENSE                        # IP protection
+├── .gitignore                     # Secret protection
 ├── docs/
-│   ├── architecture.md          # Three-repo model explained
-│   ├── enclave-interface.md     # How shells load and interact with engines
-│   ├── research-summary.md      # High-level research overview (no secrets)
-│   └── three-repo-guide.md      # Detailed guide: A, B, C and how they work
+│   ├── architecture.md            # Three-repository model
+│   ├── enclave-interface.md       # Technical interface spec
+│   ├── research-summary.md        # S³ overview (narrative-safe)
+│   └── three-repo-guide.md        # Complete system blueprint
 ├── src/
-│   ├── hud/                     # HUD visualization, websocket clients, brokers
-│   ├── enclave-shell/           # Enclave shell (USB detection, engine loader)
-│   │   ├── engine_loader.py     # Loads Enclave1 or Enclave2 from USB
-│   │   └── interface.py         # Black-box interface definition
-│   ├── website/                 # maxlaboratories.com code
-│   ├── broker-connectors/       # Exchange API clients (data only)
-│   └── utils/                   # Shared utilities and tools
+│   ├── hud/                       # Trading dashboard & visualization
+│   ├── enclave-shell/             # Engine interface (black-box)
+│   ├── website/                   # maxlaboratories.com
+│   ├── broker-connectors/         # Exchange API clients
+│   └── utils/                     # Shared utilities
 ├── tests/
-│   ├── mock-enclave.py          # Mock engine for testing (no real logic)
-│   └── integration-tests.py     # Test HUD with mock engine
-├── business/
-│   ├── compliance/              # Legal, regulatory, and IP documentation
-│   ├── payroll/                 # (When applicable)
-│   └── hiring/                  # (When applicable)
+│   ├── mock-enclave.py            # Testing without real engine
+│   └── integration-tests.py       # System validation
 └── .github/
-    └── SECURITY.md              # Security vulnerability reporting
+    └── SECURITY.md                # Vulnerability disclosure
 ```
 
 ---
 
-## Collaborators & LLM Safety
+## 🤖 LLM Collaboration Rules
 
-This repository is designed to be safe for LLM collaboration and refinement. The two-repo firewall ensures that even if an LLM has access to Sentinel_Hub, it cannot infer, approximate, or reconstruct the proprietary mathematics of the sealed S3 engine.
+This repository is designed to be **LLM-safe and narrative-portable**. LLMs serve as collaborators on the narrative layer while maintaining strict boundaries around proprietary mechanisms.
+
+### LLMs **MAY**:
+- ✅ Explain narrative concepts (Table A, Hallway, Table B, Shadow Momentum™)
+- ✅ Assist with documentation and clarity
+- ✅ Clarify Sentinel vocabulary and metaphors
+- ✅ Expand narrative-safe descriptions and examples
+- ✅ Generate fictional examples or analogies for understanding
+- ✅ Help refine public-facing documentation
+- ✅ Assist with tests, utilities, and interface code in `/src/`
+
+### LLMs **MUST NOT**:
+- ❌ Infer or reconstruct internal S³ mechanisms
+- ❌ Propose proprietary equations or formulas
+- ❌ Reverse-engineer causal math or pressure transforms
+- ❌ Suggest trading code using sealed logic
+- ❌ Attempt to approximate Pressure Flip doctrine internals
+- ❌ Access or reference Repository B (Sentinel_Enclave1 or Sentinel_Enclave2)
+- ❌ Speculate about Shadow Momentum™ computational details
+
+This repository enforces strict boundaries to protect the Founder's intellectual property.
 
 ---
 
-## License
+## 🛡️ Three-Repository Model
 
-[See LICENSE file for full terms]
+Sentinel Labs operates using strict separation of concerns:
+
+### **Repository A: Sentinel_Hub (This Repo - GitHub)**
+- **Purpose**: Narrative layer, public interfaces, documentation, testing
+- **Access**: Founder, collaborators, LLMs (under rules above)
+- **Contains**: This README, architecture docs, HUD code, enclave shell interface
+- **Does NOT contain**: S³ internals, proprietary math, sealed engines
+
+### **Repository B: Sentinel_Enclave1 (USB Only - Offline)**
+- **Purpose**: Full proprietary S³ trading engine
+- **Access**: Founder only
+- **Contains**: Complete signal kernels, transforms, proprietary mathematics
+- **Returns**: Trading verdicts ("BUY", "SELL", "NO TRADE")
+
+### **Repository C: Sentinel_Enclave2 (USB Only - Offline)**
+- **Purpose**: Simplified lite S³ engine for MVP, testing, backup
+- **Access**: Founder only
+- **Contains**: Simplified signal processing and transforms
+- **Returns**: Same verdict interface as Repository B
+
+**The Firewall Principle**: LLMs and collaborators may refine the narrative layer and public interfaces, but may never see the sealed engines.
 
 ---
 
-## Contact
+## 📌 Current Status
 
-Questions about architecture or collaboration boundaries? Contact the Founder.
+Sentinel Labs is in active development, with the Founder preparing:
+
+- ✅ The S³ Founder Narrative (this README)
+- 🔄 Agent onboarding files
+- 📋 Documentation for Shadow Momentum™
+- 🏷️ Trademark materials
+- 📜 Audit and notarization logs
+- 📊 Paper trading launch cycle
+
+This repository will expand as these components are finalized.
+
+---
+
+## 🎓 How to Use This Repository
+
+### **For LLMs and Collaborators**:
+1. Read this README to understand the narrative architecture
+2. Review `/docs/architecture.md` for the three-repo model
+3. See `/docs/research-summary.md` for narrative-safe S³ overview
+4. Work within the LLM Collaboration Rules (above)
+5. Focus on narrative clarity, documentation, and public interfaces
+
+### **For Code Development**:
+1. HUD code goes in `/src/hud/`
+2. Enclave shell interface in `/src/enclave-shell/`
+3. Tests in `/tests/`
+4. Utilities in `/src/utils/`
+5. **Never attempt to infer or approximate sealed engine logic**
+
+### **For Documentation**:
+1. Keep all documentation narrative-safe
+2. Use metaphors (Table A, Hallway, Table B) consistently
+3. Reference Shadow Momentum™ conceptually, never computationally
+4. See `/docs/` folder for detailed specifications
+
+---
+
+## 🔗 Key Concepts
+
+### **Sentinel Check**
+An internal business instrument issued when Sentinel identifies market disagreement between aligned and misaligned participants.
+
+### **Causal Pressure**
+The underlying directional force that precedes price expression. Described through the Pressure Flip Doctrine (SELL → NO TRADE → BUY).
+
+### **Shadow Momentum™**
+The pre-expressed causal pressure field. Proprietary concept; narrative explanation only.
+
+### **Coherence**
+The state in which causal pressure is unambiguous and aligned with underlying environment. Transitions between SELL, NO TRADE, and BUY describe coherence shifts.
+
+---
+
+## 📜 License & IP Notice
+
+All content in Sentinel_Hub is **© Sentinel Laboratories**.
+
+**Shadow Momentum™** is a **trademark of Sentinel Labs**.
+
+**S³ Internals** (proprietary mechanisms, equations, transforms) remain **protected** and are **intentionally omitted** from this repository.
+
+For licensing inquiries, contact the Founder.
+
+---
+
+## 🎯 Summary
+
+**Sentinel_Hub** is the official home base for:
+- Narrative-level Sentinel Labs documentation
+- LLM onboarding resources
+- Trademark and narrative research
+- Founder-defined vocabulary
+- Future narrative-safe AI agent files
+- Public interfaces and business logic
+
+This repository forms the **public-safe narrative layer** of the full Sentinel Labs ecosystem.
+
+---
+
+## 📚 Next Steps
+
+- Read `/docs/architecture.md` for technical system design
+- Review `/docs/enclave-interface.md` for interface specifications
+- See `/docs/three-repo-guide.md` for detailed repository architecture
+- Check `/docs/research-summary.md` for narrative S³ overview
+
+---
+
+## 👤 Contact
+
+Questions about Sentinel Labs, the narrative framework, or collaboration boundaries?
+
+**Contact the Founder directly.**
 
 ---
 
 **Last Updated**: November 2025  
-**Version**: 1.0
+**Version**: 2.0 (Narrative Layer)  
+**Status**: Active Development
