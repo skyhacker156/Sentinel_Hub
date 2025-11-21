@@ -1,0 +1,81 @@
+SENTINEL LABS PROPRIETARY LICENSE
+Version 1.0
+
+1. OWNERSHIP & RIGHTS
+
+All code, documentation, and materials in this repository ("Software") are the exclusive 
+intellectual property of Sentinel Labs and its Founder. All rights reserved worldwide.
+
+2. AUTHORIZED USE
+
+This Software may only be accessed and used by:
+  a) The Founder of Sentinel Labs
+  b) Individuals explicitly authorized by the Founder in writing
+  c) LLM systems (including Claude) working under explicit instructions that:
+     - Prohibit reconstruction of proprietary mathematics
+     - Enforce the "S3 Firewall Principle"
+     - Preserve the separation of Repositories A and B
+
+3. RESTRICTIONS
+
+You may NOT:
+  a) Copy, modify, or distribute this Software without written permission
+  b) Reverse-engineer, decompile, or attempt to extract trade secrets
+  c) Use this Software for commercial purposes without license
+  d) Share this Software with unauthorized third parties
+  e) Combine this Software with other systems without permission
+  f) Attempt to infer, approximate, or reconstruct the proprietary S3 engine
+
+4. CONFIDENTIALITY
+
+All information, code, and documentation in this repository is CONFIDENTIAL.
+Authorized collaborators must:
+  - Treat all code as proprietary
+  - Not disclose contents to unauthorized parties
+  - Follow all restrictions outlined in this license
+  - Comply with the Two-Repository Architecture guidelines
+
+5. TWO-REPOSITORY FIREWALL
+
+Sentinel Labs maintains strict separation:
+  - Repository A (Sentinel_Hub): Public-facing, collaborative, LLM-safe
+  - Repository B (Sentinel_Core): Sealed founder research, offline, encrypted
+
+This license does NOT grant access to Repository B. Repository B remains the exclusive 
+property of the Founder and is never shared.
+
+6. MODIFICATIONS
+
+The Founder may modify this license at any time. Changes apply to all future access.
+
+7. TERMINATION
+
+This license may be revoked at any time. Upon revocation, you must:
+  - Cease all use of the Software
+  - Delete all copies
+  - Return or destroy all materials
+
+8. LIABILITY DISCLAIMER
+
+THIS SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, 
+INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR 
+PURPOSE, AND NON-INFRINGEMENT. IN NO EVENT SHALL THE FOUNDER BE LIABLE FOR ANY DAMAGES.
+
+9. PATENT RIGHTS
+
+The Founder reserves all patent rights to any inventions, algorithms, and trade secrets 
+contained in or derived from this Software.
+
+10. INTERPRETATION
+
+This license is binding and enforceable under applicable law. Any breach may result in:
+  - Legal action for damages
+  - Injunctive relief
+  - Loss of access and authorization
+
+---
+
+For questions about licensing, contact the Founder directly.
+
+**Effective Date**: November 2025
+**Founder**: Sentinel Labs
