@@ -1,110 +1,133 @@
-# Sentinel Labs Documentation
+# Sentinel_Hub
 
-Welcome to Sentinel Labs' comprehensive documentation suite. This folder is organized into two main sections:
+**Public website and Founder dashboard for Sentinel Labs.**
 
-## 📋 [Governance](/docs/governance/)
+## What This Repository Contains
 
-**The foundational IP protection and collaboration framework.**
+Sentinel_Hub is the **frontend-only, public-facing interface** for Sentinel Labs. It contains:
 
-Start here if you're:
-- An **LLM collaborator** (read the Protocol first)
-- An **investor or partner** (read the IP Boundary Document)
-- **New to Sentinel** (read all five documents in order)
+- The public-facing website (branding, documentation, narrative)
+- The Founder's private operational dashboard
+- Website infrastructure, routing, and styling
+- Public documentation and governance materials
 
-**Documents in this section:**
-1. **IP_Boundary_Document.md** — IP categories, three-repository firewall, enforcement rules
-2. **Sentinel_Vocabulary_Charter.md** — Protected terminology and brand identity  
-3. **Sentinel_Narrative_Specifications.md** — Cinematic narrative framework and tone guide
-4. **Sentinel_Separation_Doctrine.md** — Legal-grade IP architecture and protection strategy
-5. **Sentinel_LLM_Collaboration_Protocol.md** — Binding rules for all AI collaboration
+## What This Repository Does NOT Contain
 
----
+This repository **does not contain proprietary logic, sealed engines, or trading algorithms**. Those are stored separately and offline.
 
-## 🏗️ [Architecture](/docs/architecture/)
+If you're looking for:
+- S³ Engine internals
+- Proprietary computational logic
+- Sealed algorithmic systems
 
-**Technical architecture and interface specifications.**
+...those are not here and are not part of this repo's scope.
 
-Start here if you're:
-- **Developing code** and need system design context
-- **Building features** that interact with sealed engines
-- **Understanding the system** at a technical level
+## Repository Boundaries
 
-**Documents in this section:**
-1. **architecture.md** — Three-repository model, data flow, and system design
-2. **enclave-interface.md** — Technical specifications for Engine Shell interface
-3. **research-summary.md** — S³ overview (narrative-safe, no proprietary math)
-4. **4 repo.md** — Multi-repository guide for Repository A, B, C, D+
+This is a **frontend-only** project. Work here focuses on:
 
----
+- ✅ Website development (Next.js, React, styling)
+- ✅ Public documentation and README updates
+- ✅ Founder dashboard UI and UX
+- ✅ Governance and narrative materials
+- ✅ Navigation, routing, and architecture
 
-## 🗺️ Quick Navigation
+This is **not** a place for:
 
-| Role | Start Here | Then Read |
-|------|-----------|-----------|
-| **LLM Collaborator** | [LLM Protocol](governance/Sentinel_LLM_Collaboration_Protocol.md) | [Narrative Specs](governance/Sentinel_Narrative_Specifications.md) |
-| **Founder** | [Root README](../README.md) | [All governance docs](governance/) |
-| **Developer** | [Architecture](architecture/architecture.md) | [Enclave Interface](architecture/enclave-interface.md) |
-| **Investor** | [IP Boundary](governance/IP_Boundary_Document.md) | [Root README](../README.md) |
-| **Team Member** | [Root README](../README.md) | [All documents] |
+- ❌ Proprietary engine development
+- ❌ Sealed logic or algorithms
+- ❌ Trading system internals
+- ❌ Confidential business logic
 
----
-
-## 📁 Repository Structure
+## Folder Structure
 ```
 Sentinel_Hub/
-├── README.md                           # Founder Narrative (root)
-├── LICENSE                             # IP protection notice
-├── .gitignore                          # Secret prevention
+├── README.md                    # This file
+├── LICENSE                      # IP protection notice
+├── .gitignore                   # Prevents accidental secret commits
 ├── .github/
-│   └── SECURITY.md                     # Vulnerability policy
-├── docs/                               # ← You are here
-│   ├── governance/                     # IP & collaboration framework
-│   │   ├── README.md                   # Governance overview
+│   └── SECURITY.md              # Vulnerability reporting guidelines
+├── docs/
+│   ├── governance/              # Operational and IP framework
+│   │   ├── README.md
 │   │   ├── IP_Boundary_Document.md
 │   │   ├── Sentinel_Vocabulary_Charter.md
 │   │   ├── Sentinel_Narrative_Specifications.md
 │   │   ├── Sentinel_Separation_Doctrine.md
 │   │   └── Sentinel_LLM_Collaboration_Protocol.md
-│   ├── architecture/                   # Technical specifications
-│   │   ├── README.md                   # Architecture overview
+│   ├── architecture/            # Technical specifications
+│   │   ├── README.md
 │   │   ├── architecture.md
 │   │   ├── enclave-interface.md
 │   │   ├── research-summary.md
-│   │   └── 4 repo.md
-│   └── README.md                       # This file (docs index)
-├── src/                                # Code (coming soon)
-├── tests/                              # Tests (coming soon)
-└── business/                           # Business docs (coming soon)
+│   │   └── 4_repo.md
+│   └── README.md                # Documentation index
+├── src/                         # Source code (coming soon)
+├── tests/                       # Test suite (coming soon)
+└── business/                    # Business docs (coming soon)
 ```
 
+## Narrative Context
+
+Sentinel Labs uses a narrative framework to describe its workflow:
+
+- **Table A** — Detection and initial signal processing
+- **The Hallway** — Processing, analysis, and decision-making
+- **Table B** — Settlement and outcome delivery
+- **Sentinel Check** — Internal verification instrument
+- **Order Sheet** — External order documentation
+
+This framework is used consistently across all public communications and documentation.
+
+## LLM Orientation
+
+If you're an AI model helping with this repository:
+
+1. **You're working on the public interface only.** This is frontend, documentation, and narrative work — not proprietary logic.
+
+2. **Read the boundary documents first.** Start with `docs/governance/README.md` to understand what's in scope and what isn't.
+
+3. **Use the narrative framework consistently.** When describing Sentinel workflows, use the terms: Table A, Hallway, Table B, Sentinel Check, Order Sheet.
+
+4. **Stay within these safe zones:**
+   - Website scaffolding and styling
+   - README and documentation updates
+   - Governance document creation
+   - Architecture clarification
+   - Narrative and brand consistency
+
+5. **Do not speculate about:**
+   - Proprietary algorithms or transforms
+   - Sealed engine logic
+   - Trading system internals
+   - Confidential business mechanics
+
+6. **When in doubt, ask.** If a task feels like it's crossing into proprietary territory, stop and ask for clarification.
+
+## Getting Started
+
+**For the Founder:**
+- Review `docs/governance/` for operational framework
+- Check `docs/architecture/` for technical design
+
+**For developers:**
+- Start with `docs/architecture/README.md`
+- Review the folder structure above
+- Open a pull request with your changes
+
+**For future collaborators or LLMs:**
+- Read this README first
+- Review `docs/governance/README.md` for boundaries
+- Ask questions if anything is unclear
+
+## Contributing
+
+All contributions must respect the boundaries outlined in this README and the governance documents. IP protection is non-negotiable.
+
+If you're an LLM collaborator, always ask before working on ambiguous tasks.
+
 ---
 
-## ⚖️ Governance vs. Architecture
-
-### Governance Documents (Read First)
-- Establish **legal and operational boundaries**
-- Define **IP protection strategy**
-- Set **collaboration rules**
-- Formalize **Founder control**
-
-### Architecture Documents (Read Second)
-- Explain **system design**
-- Specify **technical interfaces**
-- Detail **how components interact**
-- Provide **implementation guidance**
-
----
-
-## 🔐 All Documentation Is Founder-Controlled
-
-Every document in this repository represents the Founder's intentional IP protection strategy and is non-negotiable.
-
-**For LLMs**: Read [Sentinel_LLM_Collaboration_Protocol.md](governance/Sentinel_LLM_Collaboration_Protocol.md) before proceeding with any assistance.
-
-**For Contributors**: Understand that you are operating within a carefully designed governance framework that protects Sentinel Labs' proprietary interests.
-
----
-
+**Status**: Foundation Layer  
 **Last Updated**: November 2025  
-**Version**: 1.0  
-**Status**: Complete Foundation Layer
+**Version**: 1.0
