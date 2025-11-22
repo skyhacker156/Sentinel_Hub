@@ -1,71 +1,71 @@
-# Sentinel Labs Governance Suite
+# Governance Documentation — Sentinel_Hub
 
-This folder contains the foundational governance documents that establish Sentinel Labs' IP protection, operational boundaries, and collaboration rules.
+Welcome to the `/governance` directory.  
+This folder contains the **governing rules, policies, vocabulary, and frameworks** that define how work is conducted in Sentinel_Hub.
 
-## Documents
-
-### 1. **IP_Boundary_Document.md** (Exhibit B)
-Formal articulation of Sentinel's proprietary IP categories, the three-repository firewall model, and enforcement rules.
-- Trade secret definitions
-- Repository A/B/C separation
-- Narrative vs. execution artifacts
-- LLM & collaborator boundaries
-
-### 2. **Sentinel_Vocabulary_Charter.md** (Exhibit C)
-Canonical definitions of Sentinel's exclusive terminology and protected narrative IP.
-- Table A / Hallway / Table B (narrative terms)
-- Shadow Momentum™ (trademark)
-- Sentinel Check (internal instrument)
-- Pressure Flip States
-- Usage rules and enforcement
-
-### 3. **Sentinel_Narrative_Specifications.md** (Exhibit D)
-Cinematic and conceptual blueprint for Sentinel's narrative layer—the story bible that guides all public-facing communication.
-- Sentinel's worldview and tone
-- Table A (disagreement)
-- The Hallway (waiting)
-- Table B (settlement)
-- Narrative tone guide
-- LLM narrative rules
-
-### 4. **Sentinel_Separation_Doctrine.md** (Exhibit G)
-Legal-grade articulation of the Firewall Principle and three-repository architecture.
-- Architectural overview
-- One-way verdict flow
-- Why sealed code must remain offline
-- Why UI cannot imply sealed logic
-- Legal foundations for IP protection
-
-### 5. **Sentinel_LLM_Collaboration_Protocol.md** (Exhibit E)
-Formal, binding rules for all LLM interaction with Sentinel materials.
-- LLM access scope (what they may/must not access)
-- Behavioral rules (permitted vs. prohibited activities)
-- Content review checklist
-- Specific prohibited use cases
-- Examples of permitted vs. prohibited requests
-- Violation accountability
+This is a **policy and documentation folder**, not a code folder.  
+LLMs may safely work here with strong narrative awareness.
 
 ---
 
-## Usage
+## 📘 Purpose of This Folder
 
-These five documents form a **unified IP governance framework** that:
+Documents stored here include:
 
-- Protects proprietary S³ internals
-- Enables safe LLM collaboration
-- Establishes clear boundaries
-- Supports patent filings
-- Demonstrates intentional IP protection
+- IP boundary policies  
+- LLM collaboration protocols  
+- Separation Doctrine  
+- Vocabulary Charter  
+- Narrative specifications  
+- Website architecture specs  
+- Cross-repo governance  
+- Decision-making frameworks  
 
-**For LLMs**: Start with the **LLM_Collaboration_Protocol.md** to understand your boundaries.
-
-**For Investors/Partners**: Start with the **IP_Boundary_Document.md** to understand Sentinel's architecture.
-
-**For Team Members**: Read all five in order to understand the complete governance structure.
+These files define **how the Sentinel Labs ecosystem is run**, not how sealed logic works.
 
 ---
 
-**All governance documents are Founder-controlled and non-negotiable.**
+## ❌ What Does NOT Belong Here
 
-Last Updated: [Insert Date]  
-Version: 1.0
+This folder must never contain:
+
+- Source code  
+- Proprietary algorithms  
+- S³ Engine logic  
+- Backend computation  
+- Data processing logic  
+- Mathematical derivations for sealed systems  
+
+Governance describes rules — not implementation.
+
+---
+
+## 🧭 LLM Collaboration Rules
+
+### Allowed:
+- Write or refine policy documents  
+- Improve vocabulary definitions  
+- Organize governance frameworks  
+- Assist in drafting new procedures  
+- Clarify separation boundaries  
+- Update narrative guidelines  
+- Maintain brand tone and consistency  
+
+### Forbidden:
+- Altering the meaning of sealed logic boundaries  
+- Suggesting expansions into proprietary domains  
+- Proposing rule changes that violate IP separation  
+- Describing private computations  
+
+When unsure → ask before proceeding.
+
+---
+
+## 🛡 Key Principle
+
+**Governance establishes the rules of the ecosystem.  
+It must never reveal or imply sealed internal logic.**
+
+---
+
+**Last Updated:** November 2025  
