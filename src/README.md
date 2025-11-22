@@ -49,4 +49,25 @@ Ask the Founder before proceeding.
 ## 📁 Folder Overview
 
 Expected structure:
+src/website/
+pages/
+components/
+lib/
+api/
+public/
+styles/
+
+Each subfolder will have its own portable README.
+
+---
+
+## 🛡 Key Boundary
+
+**This folder handles public website + Founder UI only.  
+No sealed logic belongs here.**
+
+---
+
+**Last Updated:** November 2025  
+
 
