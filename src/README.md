@@ -1,50 +1,52 @@
-# /src/ — Source Code
+# Sentinel_Hub — Website Layer (Frontend)
 
-This folder contains all application code for Sentinel Labs.
+Welcome to the `/src/website` directory.  
+This folder contains the **entire frontend architecture** for the Sentinel Labs public website and Founder dashboard.
 
-## Structure
-
-- `/website/` — maxlaboratories.com code (Next.js application)
-- Other code folders (future)
-
-## Governance
-
-All code in this folder follows the **Firewall Principle**:
-
-- **Public Pathway** (`/website/public/`) — Narrative-safe, LLM-safe, no authentication
-- **Founder Pathway** (`/website/founder/`) — Password-protected, Enclave Shell access (black-box only)
-- **No S³ logic anywhere** — Proprietary internals remain sealed in Repository B/C (offline)
-
-## Key Rules
-
-1. **Complete Separation** — Public and Founder pathways are isolated
-2. **Firewall at URL Level** — Different access rules for different routes
-3. **Public Data Only** — No proprietary data or signals
-4. **Enclave Shell (Black-Box)** — Loads sealed engine, displays verdicts only
-5. **Authentication = Founder Control** — Simple password, founder-only access
-
-## Documentation
-
-For detailed architecture, see:
-- [`/docs/governance/Two_Pathway_Website_Architecture.md`](/docs/governance/Two_Pathway_Website_Architecture.md)
-- [`/docs/README.md`](/docs/README.md)
-
-## Development
-```bash
-cd src/website/
-npm install
-npm run dev
-# Visit http://localhost:3000
-```
-
-## LLM Collaboration
-
-✅ **Public Pathway** — Fully safe for LLM review and improvement  
-⚠️ **Founder Pathway** — Restricted (UI/charts/auth OK, Enclave Shell off-limits)  
-❌ **Enclave Shell** — Founder-only, no LLM modifications
+This is a **safe zone for LLM collaboration**, but with strict boundaries.
 
 ---
 
-**Last Updated**: November 2025  
-**Version**: 1.0  
-**Status**: Ready for Implementation
+## 📌 Purpose of This Folder
+
+This folder contains:
+
+- Next.js pages
+- Public-facing website components
+- Founder dashboard UI
+- Routing and navigation
+- Styles, assets, and layout
+- Public data visualization
+- Narrative presentation pages
+
+This is **UI ONLY** — no backend logic, no proprietary computation.
+
+---
+
+## 🧭 LLM Collaboration Rules
+
+### You MAY help with:
+- Next.js page scaffolding
+- React component creation/refactoring
+- CSS/Tailwind styling
+- UI layouts, navigation, routing
+- Error boundary components
+- Frontend data-fetching (public APIs only)
+- Writing or editing documentation in this folder
+
+### You MAY NOT:
+- Infer, describe, or implement sealed S³ Engine logic
+- Insert any proprietary algorithms
+- Link UI to confidential or non-public systems
+- Create backend logic (this folder should remain frontend-only)
+- Create anything implying Enclave1/2 connectivity
+
+### If unsure:
+Ask the Founder before proceeding.
+
+---
+
+## 📁 Folder Overview
+
+Expected structure:
+
