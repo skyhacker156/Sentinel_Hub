@@ -23,7 +23,10 @@ export default function FounderDashboard() {
               <p className="text-gray-500 mt-2">Notes, journal, command center</p>
             </a>
           </div>
-          
+          <a href="/founder/fireplace" className="block p-8 border border-gray-800 rounded hover:border-gray-600 transition">
+  <h2 className="text-2xl font-semibold">Fireplace →</h2>
+  <p className="text-gray-500 mt-2">The living hearth of the War Room</p>
+</a>
           <div className="mt-16 text-center text-gray-600">
             <p>Rough Framing Phase – No live data, no sealed logic</p>
             <p className="mt-4">
