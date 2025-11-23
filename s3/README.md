@@ -86,3 +86,42 @@ The S³ Vault will contain only:
 - Why quiet markets reveal causal structure  
 
 ### **3. Cross-Dom**
+s3/
+├── README.md
+├── S3_Doctrine_Index.md
+├── Hydrostatic_Framework/
+│ ├── TE_as_Pressure_Overview.md
+│ ├── Clarity_Gating_Analogy.md
+│ └── Status: Ready for review
+├── Industry_Blind_Spot/
+│ ├── Why_Quants_Miss_the_Signal.md
+│ ├── Quiet_Market_Research_Principles.md
+│ └── Status: Ready for review
+├── Cross_Domain/
+│ ├── Gridsync_Pressure_Analogy.md
+│ ├── Bio_Coherence_Analogy.md
+│ └── Oceanic_Flow_Doctrine.md
+└── TODO.md
+
+---
+
+## Assignment Protocol (For All LLMs)
+
+1. Open `TODO.md`  
+2. Pick one unclaimed filename  
+3. Produce that file using the doctrine standards  
+4. End with: **Status: Ready for review**  
+5. Stop and await Founder review  
+
+Founder retains final authority.
+
+---
+
+## Status
+Vault is active.  
+Last updated: November 23, 2025.  
+Maintained by: Founder, with structured contributions from frontier LLMs.
+
+---
+
+**Status: Ready for review.**
