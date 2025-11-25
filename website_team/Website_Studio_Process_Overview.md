@@ -1,248 +1,175 @@
+# Website Studio — Process Overview
 
-## **1. Purpose of This Document**
-
-This document explains exactly **how the Sentinel Labs Website Studio operates**, from planning → building → review → pre-deployment.
-
-The Studio is the public-facing frontend branch of Sentinel Labs, responsible for all:
-
-* Website pages
-* UI components
-* Styles and themes
-* Public documentation
-* Architecture diagrams
-* Visitor onboarding flows
-* Static/static-ready content
-
-This process overview ensures everyone builds with the same standards, rhythm, and clarity.
+**Status:** Active  
+**Scope:** Public website development workflow. No sealed systems.  
+**Badge Required:** PRISM  
+**Parent Doc:** `README.md` (read that first)
 
 ---
 
-## **2. Operating Rules (PRISM Requirements)**
+## Purpose
 
-### **This team CAN:**
+This document defines how the Website Studio operates — from intake to pre-deployment.
 
-* Create all website-related materials
-* Build pages, components, diagrams, docs
-* Refactor for clarity, readability, and organization
-* Improve public UX and UI
-* Work exclusively inside the `Sentinel_Hub` repository
-* Build everything needed *up to but not including* live deployment
-
-### **This team CANNOT:**
-
-* Access sealed/proprietary systems
-* Reference internal algorithms or S³ logic
-* Deploy the site (domain not purchased yet)
-* Make business, legal, or strategic decisions
-* Modify governance documents
-* Enter ARBITER or STEWARD domains
-
-The Website Studio creates **public infrastructure only**.
+It answers: "What's the process for building public website assets?"
 
 ---
 
-## **3. Studio Workflow Overview**
+## The 6 Phases
 
-The Studio uses a 6-phase workflow that keeps development clean, predictable, and public-safe.
-
----
-
-# **PHASE 1 — Intake**
-
-**Goal:** Understand what needs to be built.
-
-Inputs may come from:
-
-* Founder
-* PRISM tasks
-* `/docs/` content needing a webpage
-* User onboarding improvements
-* Architectural materials that need to go visual
-
-The team clarifies:
-
-* Purpose
-* Audience
-* Expected page behavior
-* Required visuals or text
-* File locations
-
-*No coding begins until requirements are clear.*
+| Phase | Goal | Output |
+|-------|------|--------|
+| **1. Intake** | Understand what needs to be built | Clear requirements |
+| **2. Plan** | Design the skeleton before coding | Page map, wireframe, folder path |
+| **3. Build** | Implement the page or component | Working code in `/src/website/` |
+| **4. Document** | Make it understandable | README in component folder |
+| **5. Review** | Verify PRISM safety and quality | Founder approval |
+| **6. Package** | Prepare for deployment (but don't deploy) | Build-ready, portable assets |
 
 ---
 
-# **PHASE 2 — Planning & Structure**
+## Phase Details
 
-**Goal:** Design the skeleton before writing code.
+### 1. Intake
 
-The team produces:
+Clarify before coding:
+- What's the purpose?
+- Who's the audience?
+- What's the expected behavior?
+- Where does it live?
 
-* Page map or component outline
-* Expected folder path
-* Content blocks
-* Wireframe-level layout
-* Required diagrams
-
-Outputs often include:
-
-```
-/architecture/diagrams/
-/website_team/plans/
-/src/website/pages/DRAFT.md
-```
-
-This phase ensures everything is thought out before building.
+**No coding until requirements are clear.**
 
 ---
 
-# **PHASE 3 — Build**
+### 2. Plan
 
-**Goal:** Implement the page or component.
-
-Tools & expectations:
-
-* React / Next.js (or equivalent chosen stack)
-* Tailwind or public-safe CSS framework
-* Strong readability
-* Commented code
-* Accessible and responsive UI
-* No backend, no sealed calls, no proprietary hooks
-
-All code must remain **public-safe and structural**.
+Produce before building:
+- Page map or component outline
+- Folder path
+- Content blocks
+- Wireframe-level layout
 
 ---
 
-# **PHASE 4 — Documentation**
+### 3. Build
 
-**Goal:** Make the output understandable by anyone.
+Implement with:
+- React / Next.js
+- Tailwind CSS
+- Readable, commented code
+- Accessible, responsive UI
+- No backend, no sealed calls
 
-Documentation includes:
-
-* A short README in the component or page folder
-* Usage examples (if component)
-* Public explanation of function or purpose
-* Links back to `/docs/` where relevant
-
-The Studio writes documentation as part of the build, not afterward.
+**Public-safe and structural only.**
 
 ---
 
-# **PHASE 5 — Review**
+### 4. Document
 
-**Goal:** Ensure clarity, PRISM safety, and alignment.
+Write as you build:
+- Short README in component folder
+- Usage examples
+- Links to `/docs/` where relevant
 
-Review checklist:
-
-* ✔ Public-safe
-* ✔ No sealed inference
-* ✔ No proprietary wording
-* ✔ Clean code
-* ✔ Clear documentation
-* ✔ Accurate visuals
-* ✔ Folder placement correct
-* ✔ Accessible (labels, alt, contrast, etc.)
-
-Final approval is always by the **Founder**.
+Documentation is part of the build, not an afterthought.
 
 ---
 
-# **PHASE 6 — Pre-Deployment Packaging**
+### 5. Review
 
-**Goal:** Keep everything in a state that could go live instantly once a domain is purchased.
+Verify before merge:
+- [ ] Public-safe
+- [ ] No sealed inference
+- [ ] Clean code
+- [ ] Clear documentation
+- [ ] Correct folder placement
+- [ ] Accessible (labels, alt text, contrast)
 
-This phase includes:
-
-* Ensuring pages compile locally
-* Ensuring assets are referenced correctly
-* Ensuring no hardcoded domain assumptions
-* Maintaining a `build_ready/` snapshot folder (optional)
-* Ensuring folder hierarchy is portable
-
-**Deployment does *not* occur.**
-We stop at packaging.
+**Founder gives final approval.**
 
 ---
 
-## **4. Studio Folder Structure**
+### 6. Package
 
-Recommended layout inside the repo:
+Prepare for deployment:
+- Pages compile locally
+- Assets referenced correctly
+- No hardcoded domain assumptions
+- Folder structure is portable
 
+**Deployment does NOT occur.** Domain not yet purchased.
+
+---
+
+## Folder Structure
 ```
 Sentinel_Hub/
- ├─ /src/
- │   └─ /website/
- │        ├─ pages/
- │        ├─ components/
- │        ├─ styles/
- │        ├─ assets/
- │        └─ README.md
- │
- ├─ /website_team/
- │   ├─ Website_Studio_Process_Overview.md
- │   ├─ website_creation_team_readme.md
- │   └─ drafts/
- │
- └─ /docs/
-      └─ website/
+├── /src/website/
+│   ├── pages/
+│   ├── components/
+│   ├── styles/
+│   ├── assets/
+│   └── README.md
+│
+├── /website_team/
+│   ├── README.md
+│   ├── PROCESS_OVERVIEW.md (this file)
+│   └── drafts/
+│
+└── /docs/website/
 ```
 
-This structure keeps all public website operations clean and discoverable.
+---
+
+## Operating Rules
+
+**CAN:**
+- Build pages, components, diagrams, docs
+- Refactor for clarity and readability
+- Work inside `Sentinel_Hub` only
+- Build up to (but not including) deployment
+
+**CANNOT:**
+- Access sealed systems
+- Reference S³ logic
+- Deploy the site
+- Make governance decisions
+- Enter ARBITER or STEWARD domains
 
 ---
 
-## **5. Studio Values**
+## Swarm Task Pattern
 
-The Website Studio follows these core principles:
+1. Check `TODO.md` for unclaimed work
+2. Claim one task
+3. Complete phases 1–6
+4. Submit for Founder review
+5. Stop
 
-### **Clarity First**
-
-Code is written for humans, not machines.
-
-### **Public-Safe Always**
-
-No leaks, no hints, no sealed references.
-
-### **Beginner-Friendly**
-
-Any new developer should be able to understand the structure without guidance.
-
-### **Consistency**
-
-Naming, structure, and tone must align with Sentinel’s public brand.
-
-### **Founder Review**
-
-Every merge requires approval.
-
-### **Zero-Deployment Until Domain**
-
-We prepare, but we do not publish.
+One task per session.
 
 ---
 
-## **6. Summary**
+## Handshake
 
-The **Website Studio** is Sentinel Labs’ public-facing engine for all website creation.
-It builds everything visitors will eventually see, understand, and interact with — safely, clearly, and professionally.
-
-This process overview ensures:
-
-* Predictable workflow
-* Clean communication
-* Consistent quality
-* PRISM-boundary alignment
-* Zero sealed-system risk
-
-The Studio builds the **public face of Sentinel Labs**.
+Before starting, confirm:
+- [ ] I have read the team README
+- [ ] I have read this process overview
+- [ ] I am operating under PRISM badge
+- [ ] I understand the 6-phase workflow
+- [ ] I will not deploy or touch sealed systems
 
 ---
 
-If you'd like, Founder, I can also generate:
+## Reference
 
-* A companion file: **Website_Studio_Task_Flow.md**
-* A full **team charter**
-* A **checklist for contributions**
-* A **component naming and styling convention guide**
-* A **public-safe UI design system**
+- `README.md` — Team overview and scope
+- `/architecture/FOLDER_PURPOSE_MATRIX.md` — What lives where
+- `/src/website/README.md` — Codebase conventions
 
-Just tell me what you want created next.
+---
+
+Last updated: November 24, 2025  
+Maintained by: Founder + STEWARD  
+Status: Ready for development
