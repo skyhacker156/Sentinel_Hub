@@ -1,142 +1,124 @@
-🌐 Sentinel Labs — Website Development Team
+# Website Development Team — Sentinel_Hub
 
-Status: Active
-Scope: Public-Facing Website, Documentation, Frontend Architecture
-Badge Level Required: PRISM
+**Status:** Active  
+**Scope:** Public-facing website, frontend code, documentation. No sealed systems.  
+**Badge Required:** PRISM
 
-🚀 Mission
+---
 
-The Sentinel Labs Website Development Team is responsible for building and maintaining all public-facing website assets for the Sentinel ecosystem.
+## Purpose
 
-This team operates entirely inside the Sentinel_Hub repository and focuses on:
+This team builds the public face of Sentinel Labs.
 
-Website structure
+Everything visitors see. Nothing they shouldn't.
 
-Frontend code
+---
 
-Public documentation
+## What This Team Builds
 
-Branding and UI/UX
+- `/src/website/` — Frontend pages, layouts, components
+- `/architecture/` — Public diagrams (in coordination with architecture team)
+- `/docs/` — Public documentation, tutorials, onboarding
+- UI/UX, branding, styling systems
+- Developer guides and explanation materials
 
-Public-safe architecture diagrams
+---
 
-Tutorials, onboarding flows, and content pages
+## What This Team Does NOT Build
 
-Readable, modern, industry-grade frontend engineering
+- S³ Engine or any sealed logic
+- Repository B/C contents
+- Governance policy (ARBITER scope)
+- Swarm coordination (STEWARD scope)
+- Production infrastructure (paused until domain secured)
 
-This team does not handle sealed systems, proprietary logic, or internal engines.
+**Boundary:** Public only. If it touches the Hallway, stop and ask.
 
-🧭 Scope of Work
-✅ What This Team Builds
+---
 
-Everything related to the public website, including:
+## Tech Stack
 
-/src/website/ frontend pages and layouts
+| Tool | Use |
+|------|-----|
+| React / Next.js | Frontend framework |
+| TypeScript | Type safety |
+| Tailwind | Styling |
+| Markdown | Documentation |
+| Mermaid | Public diagrams |
 
-Components, themes, styling systems
+Professional-grade frontend engineering. Readable, documented, beginner-friendly.
 
-Public information pages
+---
 
-Architecture and documentation pages
+## Deployment Status
 
-Visitor onboarding & explanation materials
+**Paused.**
 
-Developer-friendly guides and tutorials
+No domain has been purchased yet. Until then:
 
-Public project dashboards
+- Build locally
+- Keep everything portable
+- Maintain clean, modular structure
+- No live deployment
 
-Readable, well-organized public code
+When the domain is secured, Founder will direct hosting and deployment.
 
-❌ What This Team Does NOT Build
+---
 
-Anything inside sealed or proprietary repos
-
-The S³ Engine or any internal algorithms
-
-System logic, proprietary math, or core IP
-
-Business strategy or governance policy
-
-Anything requiring ARBITER or STEWARD authority
-
-Live production infrastructure (until domain is purchased)
-
-Boundary Rule:
-This team stops at static site creation until a domain is secured.
-No live deployment occurs at this stage.
-
-🌍 Deployment Status
-
-Live deployment is paused.
-Sentinel Labs has not yet purchased the public domain, so the dev team will:
-
-Build the full website locally
-
-Keep everything portable and ready
-
-Maintain a clean, modular directory structure
-
-Avoid production hosting until instructed otherwise
-
-The moment the domain is purchased, hosting and deployment decisions will move forward under Founder direction.
-
-🛠️ Technology Expectations
-
-Developers may use:
-
-React / Next.js
-
-Modern CSS frameworks (Tailwind, etc.)
-
-Public-safe diagrams and architecture tooling
-
-Markdown and code documentation
-
-TypeScript for clarity
-
-CI-compatible linting and formatting (optional)
-
-The focus is professional-grade frontend engineering.
-
-📁 Repository Areas Used by the Dev Team
-
-The Website Development Team works primarily in:
-
+## Working Directories
+```
 Sentinel_Hub/
- ├─ /src/website/          -> Frontend codebase
- ├─ /architecture/         -> Public architecture diagrams
- ├─ /docs/                 -> Public documentation
- ├─ /LLM_Portable/         -> Orientation and protocol docs
- ├─ README.md              -> Public repo index
+├── /src/website/      ← Frontend codebase (primary)
+├── /architecture/     ← Public diagrams (reference)
+├── /docs/             ← Public documentation
+├── /LLM_Portable/     ← Onboarding docs
+```
 
+Stay in these folders. Everything else is out of scope.
 
-All work remains public-facing and safe.
+---
 
-🧩 Team Operating Principles
+## Operating Principles
 
-PRISM Badge Required
-Only PRISM-authorized LLMs and human developers contribute here.
+1. **PRISM badge required** — No ARBITER or STEWARD work here
+2. **Public-only discipline** — No sealed logic, no inference
+3. **Clarity over cleverness** — Readable, documented, beginner-friendly
+4. **Founder review required** — All work submitted before merge
+5. **No deployment without domain** — Build it, don't publish it (yet)
 
-Public-Only Discipline
-No sealed system assumptions.
-No proprietary logic.
-No internal inference.
+---
 
-Clarity Over Cleverness
-All code must be readable, documented, and beginner-friendly.
+## Swarm Task
 
-Founder Review Required
-All work is submitted for approval before merging.
+1. Check `TODO.md` for unclaimed work
+2. Claim one task
+3. Build to spec
+4. Submit for Founder review
+5. Stop
 
-No Deployment Without Domain
-This team builds the site — it does not publish it yet.
+One task per session. Clean commits.
 
-📣 Summary
+---
 
-The Sentinel Labs Website Development Team is the official group responsible for creating the public identity of Sentinel Labs.
-This team delivers a polished, modern, high-clarity website — ready for deployment once the domain is secured.
+## Handshake
 
-We are pros.
-We build clean.
-We build clear.
-We build the public face of Sentinel Labs.
+Before starting, confirm:
+- [ ] I have read this README
+- [ ] I am operating under PRISM badge
+- [ ] I will build public-facing assets only
+- [ ] I will not touch sealed systems or deploy to production
+
+---
+
+## Reference
+
+- `/architecture/README.md` — Public architecture docs
+- `/architecture/FOLDER_PURPOSE_MATRIX.md` — What lives where
+- `/docs/` — Public documentation
+- `/LLM_Portable/` — Onboarding protocols
+
+---
+
+Last updated: November 24, 2025  
+Maintained by: Founder + STEWARD  
+Status: Ready for development
